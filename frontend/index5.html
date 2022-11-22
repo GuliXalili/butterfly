@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1  style="background-color:rgb(70, 31, 3);">CHOCOLATE</h1>
+    <h1  style="background-color:rgb(227, 126, 215);">MESSANGERS</h1>
     <br>
-    {% for x in malumotlar %}
-        <h3>{{ x.name }}</h3>
-        <p>{{ x.engridients }}</p>
-        <img src="{{ x.img }}" alt="" style="width: 400px">
-        <p>{{ x.price }}</p>
-        <p>{{ x.date }}</p>
+    {% for f in malumotlar1 %}
+        <h3>{{ f.name }}</h3>
+        <p>{{ f.users }}</p>
+        <img src="{{ f.img }}" alt="" style="width: 400px">
+        <p>{{ f.date }}</p>
     {% endfor %}
 </body>
 </html>

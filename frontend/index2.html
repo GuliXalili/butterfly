@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1  style="background-color:rgb(209, 46, 17);">M AND Ms</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate. Labore dolores dolorem quaerat velit obcaecati perspiciatis incidunt! Explicabo, qui numquam ea distinctio maxime enim consectetur magnam voluptates sapiente id.
+    <h1  style="background-color:rgb(227, 126, 215);">FLOWERS</h1>
     <br>
-    <img src="{% static 'img/mm.jpg' %}" alt="">
+    {% for b in malumotlar1 %}
+        <h3>{{ b.name }}</h3>
+        <p>{{ b.color }}</p>
+        <img src="{{ b.img }}" alt="" style="width: 400px">
+        <p>{{ b.price }}</p>
+        <p>{{ b.date }}</p>
+    {% endfor %}
 </body>
 </html>
